@@ -1,0 +1,27 @@
+.input {
+  width: 100%;
+  font-size: 1rem;
+  color: var(--default-color);
+  border: 1px solid var(--default-color);
+  padding: 5px 10px;
+}
+
+::placeholder {
+  color: var(--default-color);
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover, 
+.input:-webkit-autofill:focus, 
+.input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: var(--default-color);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@media (max-width: 425px) {
+  .input {
+      padding: 3px 5px;
+  }
+}
+  

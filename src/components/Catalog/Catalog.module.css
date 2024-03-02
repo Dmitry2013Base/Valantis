@@ -1,0 +1,29 @@
+table {
+    margin-bottom: 10px;
+}
+
+table, th, td {
+    border: 1px solid var(--default-color);
+    border-collapse: collapse;
+}
+
+th {
+    background-color: var(--th-background-color);
+}
+
+th,
+td {
+    padding: 5px 10px;
+    text-align: center;
+}
+
+tr:nth-child(2n){
+	background-color: var(--tr-background-color);
+}
+
+@media (max-width: 425px) {
+    .th,
+    td {
+        padding: 3px 5px;
+    }
+}
